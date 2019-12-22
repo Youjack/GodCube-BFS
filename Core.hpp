@@ -143,7 +143,7 @@ int8 *Search(int8 State[StateLen])
 		if (OK) break;
 	}
 	end_t = clock();
-	cout << "time: " << end_t - start_t << "ms" << endl;
+	cout << "time: " << (double)(end_t-start_t)/CLOCKS_PER_SEC*1000 << "ms" << endl;
 
 	// RETURN
 	SearchPath();
